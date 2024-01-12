@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Believer Form</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">CDC Membership Form</h1>
+    <p id="description">Kindly fill in the below information genuinely</p>
+    <form id="survey-form" action="miieagle06@gmail.com" method="GET">
+      <fieldset>
+        <label for="name" id="name-label">First name<input id="name" type="text" name="Firstname" placeholder="First name" required/></label>
+        <label for="lastname">Last name<input id="lastname" type="text" name="lastname" placeholder="Last name" required/></label>
+        <label for="email" id="email-label">Email <input id="email" type="email" name="email" required placeholder="Email"/></label>
+         <label id="number-label" for="number">Age<input id="number" type="number" name="number"min="10" max="100" placeholder="Optional"/></label>
+      </fieldset>
+      <fieldset>
+        <legend>The religion you were born into:</legend>
+        <label for="chr"><input type="radio" id="chr" name="religion"value="chr" checked class="great"/> Christian</label>
+        <label for="isl"><input type="radio" id="isl" name="religion" value="isl" class="great" /> Islam</label>
+        <label for="trd"><input type="radio" id="trd" name="religion" value="trd" class="great"/> Other(specify):</label>
+      </fieldset>
+      <fieldset>
+        <legend>How were you converted</legend>
+        <select id="dropdown">
+          <option value="" >Select</option>
+          <option value="1" >Church service</option>
+          <option value="2" >Family devotion</option>
+          <option value="3" >Reading of Tract</option>
+          <option value="4" >Someone preached to you</option>
+        </select>
+        <label for="yse"> Briefly tell us your salvation experience <textarea placeholder="Your salvation experience" id="yse" name="yse" required /></textarea></label>
+      </fieldset>
+      <fieldset>
+        <legend>Which unit will you like to served: </legend>
+        <label><input type="checkbox" value="choir" name="unit" class="great" checked/> Choir</label>
+        <label><input type="checkbox" value="usher" name="unit" class="great"/> Usher</label>
+        <label><input type="checkbox" value="sunt" name="unit" class="great" /> Sunday School Teacher</label>
+        <label><input type="checkbox" value="child" name="unit" class="great"/> Children Teacher</label>
+        <label><input type="checkbox" value="sunc" name="unit" class="great" /> Sunctuary Keeper</label>
+        <label><input type="checkbox" value="prayer" name="unit" class="great" /> Prayer Warrior</label>
+      </fieldset>
+      <input type="submit" id="submit">
+    </form>
+  </body>
+</html>
